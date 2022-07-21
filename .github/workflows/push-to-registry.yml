@@ -21,7 +21,10 @@ jobs:
       with:
         image: ubi7
         tags: latest ${{ github.sha }}
-        context: ./UBI7
+        containerfiles: \
+          ./UBI7/Containerfile
+        extra-args: \
+          UBI7/
 
     - name: Push To Registry
       uses: redhat-actions/push-to-registry@v2.6
