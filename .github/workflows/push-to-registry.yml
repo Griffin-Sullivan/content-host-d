@@ -21,7 +21,7 @@ jobs:
       with:
         image: ubi7
         tags: latest ${{ github.sha }}
-        containerfiles: UBI7/Containerfile
+        containerfiles: UBI7/Dockerfile
         context: UBI7/
 
     - name: Push To Registry
