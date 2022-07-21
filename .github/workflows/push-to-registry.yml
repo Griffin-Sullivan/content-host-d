@@ -20,7 +20,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: ubi7
-        tags: latest ${{ github.sha }}
+        tags: griffinsully/testing-repo
         containerfiles: UBI7/Dockerfile
         context: UBI7/
 
